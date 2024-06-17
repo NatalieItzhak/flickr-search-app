@@ -74,3 +74,40 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .photo-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 50px);
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-item {
+    flex: 1 1 calc(100% - 40px);
+    max-width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-item {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    padding: 0.5rem;
+  }
+
+  .photo-info h4 {
+    font-size: 12px;
+  }
+
+  .photo-info p {
+    font-size: 10px;
+  }
+
+  .full-size-link,
+  .original-link {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+}
