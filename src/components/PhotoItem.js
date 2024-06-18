@@ -22,12 +22,7 @@ const PhotoItem = ({ photo }) => {
           <p className="tags-truncate">{tags}</p>
         </div>
         <div className="link">
-          <a
-            href={link}
-            className="original-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={link} className="original-link" target="_blank" rel="">
             View Full Size
           </a>
         </div>
